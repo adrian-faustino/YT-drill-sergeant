@@ -2,4 +2,4 @@ const TestView = () => {
   return {};
 };
 
-export default TestView;
+export const View = TestView();

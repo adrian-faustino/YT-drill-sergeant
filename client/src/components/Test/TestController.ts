@@ -1,10 +1,15 @@
+import { store } from "../../redux/store";
+import { toggleVidSearch } from "../../redux/actions/sidebarActions";
+
 const TestController = () => {
-  const toggleVidSearch = (e: React.MouseEvent<HTMLButtonElement>): void => {
+  const handleToggleVidSearch = (
+    e: React.MouseEvent<HTMLButtonElement>
+  ): void => {
     e.preventDefault();
-    console.log("Clicked!");
+    store.dispatch(toggleVidSearch());
   };
 
-  return { toggleVidSearch };
+  return { handleToggleVidSearch };
 };
 
 export const Controller = TestController();

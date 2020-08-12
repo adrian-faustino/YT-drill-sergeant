@@ -1,13 +1,15 @@
 import React from "react";
-import { default as Controller } from "./VidSearchFieldController";
+import { controller } from "./VidSearchFieldController";
+import { useSelector, RootStateOrAny } from "react-redux";
 
-const VidSearchFieldModel = () => {
-  const controller = Controller();
+const VidSearchField = () => {
+  const store = useSelector((state: RootStateOrAny) => state);
+
   return (
     <div>
-      <form>
+      <form onSubmit={controller.handleSubmitVidURL}>
         <input
-          value={controller.input}
+          value={store.vidSettings.current_url_input}
           onChange={controller.handleInputChange}
           placeholder="Enter video URL"
         />
@@ -16,4 +18,4 @@ const VidSearchFieldModel = () => {
   );
 };
 
-export default VidSearchFieldModel;
+export default VidSearchField;

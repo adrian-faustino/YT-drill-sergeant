@@ -9,4 +9,4 @@ const SidebarContainerController = () => {
   return { handleToggleSearchField };
 };
 
-export default SidebarContainerController;
+export const controller = SidebarContainerController();

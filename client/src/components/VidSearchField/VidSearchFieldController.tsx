@@ -1,13 +1,17 @@
-import { useState } from "react";
+import { store } from "../../redux/store";
+import { setCurrentURLInput } from "../../redux/actions/vidSettingsActions";
 
 const VidSearchFieldController = () => {
-  const [input, setInput] = useState("");
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(e.target.value);
+    store.dispatch(setCurrentURLInput(e.target.value));
   };
 
-  return { handleInputChange, input };
+  const handleSubmitVidURL = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("submitting");
+  };
+
+  return { handleInputChange, handleSubmitVidURL };
 };
 
-export default VidSearchFieldController;
+export const controller = VidSearchFieldController();

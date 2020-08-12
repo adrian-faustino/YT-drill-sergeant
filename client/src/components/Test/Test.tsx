@@ -4,7 +4,7 @@ import { View } from "./TestView";
 /* Controller */
 import { Controller } from "./TestController";
 
-const TestModel = () => {
+const Test = () => {
   return (
     <div>
       test component
@@ -15,4 +15,4 @@ const TestModel = () => {
   );
 };
 
-export default TestModel;
+export default Test;

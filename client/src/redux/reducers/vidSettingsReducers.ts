@@ -21,5 +21,10 @@ const vidSettingsReducers = (
 ) => {
   switch (action.type) {
     case SET_CURRENT_URL_INPUT:
+      return { ...state, current_url_input: action.payload };
+    default:
+      return state;
   }
 };
+
+export default vidSettingsReducers;

@@ -1,9 +1,10 @@
 import {
   TOGGLE_VID_SEARCH,
   TOGGLE_MODE_SETTINGS,
+  ts_ToggleBool,
 } from "../../constants/actionTypes";
 
-interface sidebarState {
+interface SidebarState {
   vidSearchToggled: boolean;
   modeSettingsToggled: boolean;
 }
@@ -13,9 +14,10 @@ const initialState = {
   modeSettingsToggled: false,
 };
 
-type ToggleVidSearch = { type: String; payload?: boolean };
-
-const sidebarReducers = (state = initialState, action: ToggleVidSearch) => {
+const sidebarReducers = (
+  state: SidebarState = initialState,
+  action: ts_ToggleBool
+) => {
   switch (action.type) {
     case TOGGLE_VID_SEARCH:
       return { ...state, vidSearchToggled: !state.vidSearchToggled };

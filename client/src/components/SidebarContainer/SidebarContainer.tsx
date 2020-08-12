@@ -11,8 +11,13 @@ const SidebarContainer = () => {
   return (
     <div className="SidebarContainer">
       <h1>sidebar container</h1>
-      <button onClick={controller.handleToggleSearchField}>toggle</button>
+
+      <button onClick={controller.handleToggleSearchField}>
+        toggle search
+      </button>
       {store.sidebar.vidSearchToggled && <VidSearchField />}
+
+      <button onClick={controller.handleToggleMode}>toggle mode</button>
     </div>
   );
 };

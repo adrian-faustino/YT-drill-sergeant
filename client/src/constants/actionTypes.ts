@@ -8,3 +8,4 @@ export const TOGGLE_MODE_SETTINGS: String = "TOGGLE_MODE_SETTINGS";
 
 // vidSettingsReducers.ts
 export const SET_CURRENT_URL_INPUT: String = "SET_CURRENT_URL_INPUT";
+export const SET_URL: String = "SET_URL";

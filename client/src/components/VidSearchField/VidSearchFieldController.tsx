@@ -11,7 +11,9 @@ const VidSearchFieldController = () => {
 
   const handleSubmitVidURL = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const url = store.getState().vidSettings.current_url_input;
+    // Note: if we use vidSettings.current_url_input we get a type "never" error... no idea why
+    const url = store.getState().vidSettings["current_url_input"];
+
     if (url) {
       console.log("Setting session URL to:", url);
       store.dispatch(setURL(url));

@@ -11,16 +11,16 @@ interface VidSettingsState {
   playbackSpeed: Number;
 }
 
+interface VidSettingsTypes {
+  type: String;
+  payload?: String | Number;
+}
+
 const initialState = {
   current_url_input: "",
   url: "https://www.youtube.com/watch?v=0b_L1CzZTwI",
   playbackSpeed: 1,
 };
-
-interface VidSettingsTypes {
-  type: String;
-  payload?: String | Number;
-}
 
 const vidSettingsReducers = (
   state: VidSettingsState = initialState,

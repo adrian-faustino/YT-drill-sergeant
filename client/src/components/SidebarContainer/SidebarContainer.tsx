@@ -10,8 +10,6 @@ const SidebarContainer = () => {
   const store = useSelector((state: RootStateOrAny) => state);
   return (
     <div className="SidebarContainer">
-      <h1>sidebar container</h1>
-
       {/* Controls */}
       <div className="SidebarContainer__btns-container">
         <button onClick={controller.handleToggleSearchField}>

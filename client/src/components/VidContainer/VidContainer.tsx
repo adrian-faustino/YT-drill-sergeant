@@ -5,6 +5,8 @@ import VidPlayer from "./VidPlayer";
 import { PLAYBACK_SPEEDS } from "../../constants/appConfig";
 /* Controller */
 import controller from "./VidController";
+/* Styles */
+import "./VidContainer.css";
 
 const VidContainer = () => {
   const vidSettings = useSelector((state: RootStateOrAny) => state.vidSettings);
@@ -13,14 +15,18 @@ const VidContainer = () => {
 
   return (
     <div>
-      <h3>from vid container</h3>
-      <p>URL: {vidSettings.url}</p>
       {vidSettings.url && <VidPlayer />}
 
       {/* Playback speed buttons */}
-      {PLAYBACK_SPEEDS.map((speed) => (
-        <button onClick={controller.handlePlaybackSpeedChange}>{speed}</button>
-      ))}
+      {vidSettings.url &&
+        PLAYBACK_SPEEDS.map((speed) => (
+          <button
+            key={`${speed}-btn`}
+            onClick={controller.handlePlaybackSpeedChange}
+          >
+            {speed}
+          </button>
+        ))}
     </div>
   );
 };

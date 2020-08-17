@@ -12,12 +12,16 @@ const SidebarContainer = () => {
     <div className="SidebarContainer">
       <h1>sidebar container</h1>
 
-      <button onClick={controller.handleToggleSearchField}>
-        toggle search
-      </button>
-      {store.sidebar.vidSearchToggled && <VidSearchField />}
+      {/* Controls */}
+      <div className="SidebarContainer__btns-container">
+        <button onClick={controller.handleToggleSearchField}>
+          toggle search
+        </button>
+        <button onClick={controller.handleToggleMode}>toggle mode</button>
+      </div>
 
-      <button onClick={controller.handleToggleMode}>toggle mode</button>
+      {/* Toggle to open components */}
+      {store.sidebar.vidSearchToggled && <VidSearchField />}
     </div>
   );
 };

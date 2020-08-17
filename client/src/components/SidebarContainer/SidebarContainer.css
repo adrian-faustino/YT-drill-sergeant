@@ -1,2 +1,9 @@
 .SidebarContainer {
+  position: absolute;
+  left: 10px;
+  background: blue;
+}
+
+.SidebarContainer__btns-container {
+  background: rgba(0, 0, 0, 0.5);
 }

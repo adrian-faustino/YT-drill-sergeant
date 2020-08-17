@@ -1,6 +1,7 @@
 import {
   SET_URL,
   SET_CURRENT_URL_INPUT,
+  SET_PLAYBACK_SPEED,
   ts_InputChange,
 } from "../../constants/actionTypes";
 
@@ -16,7 +17,10 @@ const initialState = {
   playbackSpeed: 25,
 };
 
-type VidSettingsTypes = ts_InputChange | ts_InputChange;
+interface VidSettingsTypes {
+  type: String;
+  payload?: String | Number;
+}
 
 const vidSettingsReducers = (
   state: VidSettingsState = initialState,
@@ -27,6 +31,8 @@ const vidSettingsReducers = (
       return { ...state, current_url_input: action.payload };
     case SET_URL:
       return { ...state, url: action.payload };
+    case SET_PLAYBACK_SPEED:
+      return { ...state, playbackSpeed: action.payload };
     default:
       return state;
   }

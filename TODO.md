@@ -4,7 +4,7 @@
 
 - [x] vid search toggle
 - [] mode select toggle
-- [] display vid
+- [x] display vid
 - [] basic looop feature
 - [] display speed option
 - [] set loop number at each speed
@@ -17,3 +17,7 @@
 ## Stretch:
 
 [] session stats (total mins)
+
+## Current task:
+
+[] set loop start and end points

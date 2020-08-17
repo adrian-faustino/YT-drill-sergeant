@@ -5,7 +5,7 @@ import { useSelector, RootStateOrAny } from "react-redux";
 const VidPlayer = () => {
   const vidSettings = useSelector((state: RootStateOrAny) => state.vidSettings);
 
-  console.log("rerendered again");
+  console.log("rerendered again", vidSettings.playbackSpeed);
 
   return (
     <div>

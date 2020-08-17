@@ -14,7 +14,7 @@ interface VidSettingsState {
 const initialState = {
   current_url_input: "",
   url: "",
-  playbackSpeed: 25,
+  playbackSpeed: 1,
 };
 
 interface VidSettingsTypes {

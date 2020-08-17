@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector, RootStateOrAny } from "react-redux";
 import VidPlayer from "./VidPlayer";
+/* Constants */
+import { PLAYBACK_SPEEDS } from "../../constants/appConfig";
 /* Controller */
 import controller from "./VidController";
 
@@ -15,7 +17,10 @@ const VidContainer = () => {
       <p>URL: {vidSettings.url}</p>
       {vidSettings.url && <VidPlayer />}
 
-      <button onClick={controller.handlePlaybackSpeedChange}>0.5</button>
+      {/* Playback speed buttons */}
+      {PLAYBACK_SPEEDS.map((speed) => (
+        <button onClick={controller.handlePlaybackSpeedChange}>{speed}</button>
+      ))}
     </div>
   );
 };

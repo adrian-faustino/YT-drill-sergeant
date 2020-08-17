@@ -6,7 +6,8 @@ const VidController = () => {
     e: React.MouseEvent<HTMLButtonElement>
   ) => {
     e.preventDefault();
-    const speed = parseInt(e.currentTarget.innerHTML);
+    const speed = parseFloat(e.currentTarget.innerHTML);
+    console.log("Setting speed:", speed);
     store.dispatch(setPlaybackSpeed(speed));
   };
 

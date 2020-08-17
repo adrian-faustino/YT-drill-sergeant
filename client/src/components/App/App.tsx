@@ -2,13 +2,14 @@ import React from "react";
 /* Styles */
 import "./App.css";
 /* Components */
-import { Test, SidebarContainer } from "./components";
+import { Test, SidebarContainer, VidPlayer } from "..";
 
 function App() {
   return (
     <div className="App">
-      <Test />
+      {/* <Test /> */}
       <SidebarContainer />
+      <VidPlayer />
     </div>
   );
 }

@@ -13,7 +13,7 @@ interface VidSettingsState {
 
 const initialState = {
   current_url_input: "",
-  url: "",
+  url: "https://www.youtube.com/watch?v=0b_L1CzZTwI",
   playbackSpeed: 1,
 };
 

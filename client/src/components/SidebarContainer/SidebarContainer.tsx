@@ -18,7 +18,7 @@ const SidebarContainer = () => {
         <button onClick={controller.handleToggleMode}>toggle mode</button>
       </div>
 
-      {/* Toggle to open components */}
+      {/* Components that are toggled by the controllers above */}
       {store.sidebar.vidSearchToggled && <VidSearchField />}
     </div>
   );

@@ -27,6 +27,10 @@ const VidContainer = () => {
             {speed}
           </button>
         ))}
+
+      {/* Loop start and end input */}
+      <input placeholder="start" />
+      <input placeholder="end" />
     </div>
   );
 };

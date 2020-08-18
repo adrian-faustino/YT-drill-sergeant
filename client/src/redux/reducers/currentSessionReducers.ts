@@ -5,10 +5,14 @@ import {
 
 interface CurrentSessionState {
   isInSession: Boolean;
+  currentSpeed: Number;
+  currentLoopCount: Number;
 }
 
 const initialState = {
   isInSession: false,
+  currentSpeed: 0.25,
+  currentLoopCount: 1,
 };
 
 const currentSessionReducers = (

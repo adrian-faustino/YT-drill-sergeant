@@ -2,7 +2,7 @@ import React from "react";
 /* Styles */
 import "./SidebarContainer.css";
 /* Components */
-import { VidSearchField } from "../";
+import { VidSearchField, DrillSettings } from "../";
 import { controller } from "./SidebarContainerController";
 import { useSelector, RootStateOrAny } from "react-redux";
 
@@ -20,6 +20,7 @@ const SidebarContainer = () => {
 
       {/* Components that are toggled by the controllers above */}
       {store.sidebar.vidSearchToggled && <VidSearchField />}
+      {store.sidebar.modeSettingsToggled && <DrillSettings />}
     </div>
   );
 };

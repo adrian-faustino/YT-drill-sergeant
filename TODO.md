@@ -5,8 +5,8 @@
 - [x] vid search toggle
 - [] mode select toggle
 - [x] display vid
-- [] basic looop feature
-- [] display speed option
+- [x] basic looop feature
+- [x] display speed option
 - [] set loop number at each speed
   [] count down
 
@@ -14,10 +14,15 @@
 
 [] on vid search toggle, focus input field
 
+## Refactor:
+
+[] if user inputs YT URL with start and end time, parse and set loop
+
 ## Stretch:
 
 [] session stats (total mins)
 
 ## Current task:
 
-[] set loop start and end points
+[x] set loop start and end points
+[] set loop number at each speed

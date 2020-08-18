@@ -21,6 +21,8 @@ const sidebarReducers = (
   switch (action.type) {
     case TOGGLE_VID_SEARCH:
       return { ...state, vidSearchToggled: !state.vidSearchToggled };
+    case TOGGLE_MODE_SETTINGS:
+      return { ...state, modeSettingsToggled: !state.modeSettingsToggled };
     default:
       return state;
   }

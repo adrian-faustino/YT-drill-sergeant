@@ -1,5 +1,8 @@
 import { store } from "../../redux/store";
-import { toggleVidSearch } from "../../redux/actions/sidebarActions";
+import {
+  toggleVidSearch,
+  toggleModeSettings,
+} from "../../redux/actions/sidebarActions";
 
 const SidebarContainerController = () => {
   const handleToggleSearchField = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -11,6 +14,7 @@ const SidebarContainerController = () => {
   const handleToggleMode = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log("Toggled mode container.");
+    store.dispatch(toggleModeSettings());
   };
 
   return { handleToggleSearchField, handleToggleMode };

@@ -1,5 +1,9 @@
 import { store } from "../../redux/store";
 import { setLoopsAtSpeed } from "../../redux/actions/drillSettingsActions";
+import {
+  setIsInSession,
+  toggleIsInSession,
+} from "../../redux/actions/currentSessionActions";
 
 const DrillSettingsController = () => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,6 +21,7 @@ const DrillSettingsController = () => {
     e.preventDefault();
 
     // set "isInSession" to true (if isInSession is true, vidPlayer will track and update current loop count)
+    store.dispatch(toggleIsInSession());
 
     // bring current video back to start of loop
 

@@ -15,3 +15,7 @@ export const SET_LOOP_END: String = "SET_LOOP_END";
 
 // drillSettingsReducers.ts
 export const SET_LOOPS_AT_SPEED: String = "SET_LOOPS_AT_SPEED";
+
+// currentSessionReducers.ts
+export const SET_IS_IN_SESSION: String = "SET_IS_IN_SESSION";
+export const TOGGLE_IS_IN_SESSION: String = "TOGGLE_IS_IN_SESSION";

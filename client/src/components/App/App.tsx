@@ -2,14 +2,14 @@ import React from "react";
 /* Styles */
 import "./App.css";
 /* Components */
-import { Test, SidebarContainer, VidPlayer } from "..";
+import { Test, SidebarContainer, VidContainer } from "..";
 
 function App() {
   return (
     <div className="App">
       {/* <Test /> */}
       <SidebarContainer />
-      <VidPlayer />
+      <VidContainer />
     </div>
   );
 }

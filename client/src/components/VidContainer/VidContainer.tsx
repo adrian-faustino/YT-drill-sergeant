@@ -29,8 +29,21 @@ const VidContainer = () => {
         ))}
 
       {/* Loop start and end input */}
-      <input placeholder="start" />
-      <input placeholder="end" />
+      <form onSubmit={controller.handleSubmit}>
+        <input
+          type="number"
+          value={vidSettings.loop_start}
+          onChange={controller.handleLoopStart}
+          placeholder="start"
+        />
+        <input
+          type="number"
+          value={vidSettings.loop_end}
+          onChange={controller.handleLoopEnd}
+          placeholder="end"
+        />
+        <button type="submit">set</button>
+      </form>
     </div>
   );
 };

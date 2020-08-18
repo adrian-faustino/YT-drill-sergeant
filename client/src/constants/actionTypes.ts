@@ -10,3 +10,5 @@ export const TOGGLE_MODE_SETTINGS: String = "TOGGLE_MODE_SETTINGS";
 export const SET_CURRENT_URL_INPUT: String = "SET_CURRENT_URL_INPUT";
 export const SET_URL: String = "SET_URL";
 export const SET_PLAYBACK_SPEED: String = "SET_PLAYBACK_SPEED";
+export const SET_LOOP_START: String = "SET_LOOP_START";
+export const SET_LOOP_END: String = "SET_LOOP_END";

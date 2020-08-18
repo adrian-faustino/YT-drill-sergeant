@@ -1,6 +1,7 @@
 import {
   SET_IS_IN_SESSION,
   TOGGLE_IS_IN_SESSION,
+  INCREMENT_LOOP_COUNT,
 } from "../../constants/actionTypes";
 
 interface CurrentSessionState {
@@ -24,6 +25,11 @@ const currentSessionReducers = (
       return { ...state, isInSession: action.payload };
     case TOGGLE_IS_IN_SESSION:
       return { ...state, isInSession: !state.isInSession };
+    case INCREMENT_LOOP_COUNT:
+      return {
+        ...state,
+        currentLoopCount: state.currentLoopCount + action.payload,
+      };
     default:
       return state;
   }

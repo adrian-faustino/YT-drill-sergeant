@@ -1,3 +1,4 @@
+import { incrementLoopCount } from "./../../redux/actions/currentSessionActions";
 import { store } from "../../redux/store";
 import {
   setPlaybackSpeed,
@@ -41,11 +42,20 @@ const VidController = () => {
     store.dispatch(setURL(url));
   };
 
+  // when loop completes, increment count if isInSession
+  const handleLoopComplete = () => {
+    if (store.getState().currentSession.isInSession) {
+      console.log("Loop complete! Incrementing count");
+      store.dispatch(incrementLoopCount(1));
+    }
+  };
+
   return {
     handlePlaybackSpeedChange,
     handleLoopStart,
     handleLoopEnd,
     handleSubmit,
+    handleLoopComplete,
   };
 };
 

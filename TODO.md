@@ -7,7 +7,7 @@
 - [x] display vid
 - [x] basic looop feature
 - [x] display speed option
-      [] map x times at each speed
+      [] spread playback speeds to input how many times to loop at each speed
 - [] set loop number at each speed
   [] count down
 
@@ -27,4 +27,4 @@
 
 [x] set loop start and end points
 [] set loop number at each speed
-[] map x times at each speed
+[] spread playback speeds to input how many times to loop at each speed

@@ -14,6 +14,7 @@
 ## QOL:
 
 [] on vid search toggle, focus input field
+[] back/forward 10 seconds, 30 seconds buttons
 
 ## Refactor:
 

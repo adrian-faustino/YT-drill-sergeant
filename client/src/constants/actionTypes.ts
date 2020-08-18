@@ -12,3 +12,6 @@ export const SET_URL: String = "SET_URL";
 export const SET_PLAYBACK_SPEED: String = "SET_PLAYBACK_SPEED";
 export const SET_LOOP_START: String = "SET_LOOP_START";
 export const SET_LOOP_END: String = "SET_LOOP_END";
+
+// drillSettingsReducers.ts
+export const SET_LOOPS_AT_SPEED: String = "SET_LOOPS_AT_SPEED";

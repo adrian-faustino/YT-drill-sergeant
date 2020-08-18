@@ -45,6 +45,8 @@ const VidController = () => {
   // when loop completes, increment count if isInSession
   const handleLoopComplete = () => {
     if (store.getState().currentSession.isInSession) {
+      // if loop count equal to max count, increment current speed
+
       console.log("Loop complete! Incrementing count");
       store.dispatch(incrementLoopCount(1));
     }

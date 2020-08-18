@@ -7,9 +7,9 @@
 - [x] display vid
 - [x] basic looop feature
 - [x] display speed option
-      [] spread playback speeds to input how many times to loop at each speed
-- [] set loop number at each speed
-  [] count down
+      [x] spread playback speeds to input how many times to loop at each speed
+- [x] set loop number at each speed
+      [] count down
 
 ## QOL:
 
@@ -27,5 +27,7 @@
 ## Current task:
 
 [x] set loop start and end points
-[] set loop number at each speed
-[] spread playback speeds to input how many times to loop at each speed
+[x] set loop number at each speed
+[x] spread playback speeds to input how many times to loop at each speed
+[] drill mode logic
+[] set speed at each level

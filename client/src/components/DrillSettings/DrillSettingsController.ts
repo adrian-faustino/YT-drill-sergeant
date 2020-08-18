@@ -23,6 +23,8 @@ const DrillSettingsController = () => {
     // set "isInSession" to true (if isInSession is true, vidPlayer will track and update current loop count)
     store.dispatch(toggleIsInSession());
 
+    // set speed?
+
     // bring current video back to start of loop
 
     // STRETCH: trigger countdown to prepare user to dance/play with video

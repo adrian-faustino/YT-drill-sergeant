@@ -13,7 +13,17 @@ const DrillSettingsController = () => {
     store.dispatch(setLoopsAtSpeed(loops, speed));
   };
 
-  return { handleInputChange };
+  const handleStartSession = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    // set "isInSession" to true (if isInSession is true, vidPlayer will track and update current loop count)
+
+    // bring current video back to start of loop
+
+    // STRETCH: trigger countdown to prepare user to dance/play with video
+  };
+
+  return { handleInputChange, handleStartSession };
 };
 
 const controller = DrillSettingsController();
